@@ -7,7 +7,7 @@
     <title>SaraQuintana</title>
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <div id="cookieConsent">
-        <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario. <button
+        <p>Este sitio web NO utiliza cookies puesto que no almacena información del usuario. <button
                 id="acceptCookies">Aceptar</button></p>
     </div>
 
@@ -16,6 +16,20 @@
             setCookie("cookieConsent", "accepted", 365);
             document.getElementById("cookieConsent").style.display = "none";
         }
+        // Mostrar u ocultar el mensaje de cookies basado en el consentimiento
+        window.onload = function () {
+            var cookieConsent = getCookie("cookieConsent");
+            if (!cookieConsent) {
+                document.getElementById("cookieConsent").style.display = "block";
+            } else {
+                document.getElementById("cookieConsent").style.display = "none";
+            }
+
+            // Añadir evento al botón de aceptar
+            document.getElementById("acceptCookies").onclick = function () {
+                setCookie("cookieConsent", "accepted", 365);
+                document.getElementById("cookieConsent").style.display = "none";
+            }
     </script>
 
     <!-- Fuente Poppins -->
