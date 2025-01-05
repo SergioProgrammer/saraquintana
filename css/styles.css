@@ -12,7 +12,6 @@ body {
 
 /* Body Styles */
 body {
-
     font-family: 'Poppins', sans-serif;
     background: black;
     color: #fff;
@@ -56,8 +55,6 @@ header h1 {
     /* Asegura que la imagen completa se muestre */
 }
 
-
-
 .banner h2 {
     font-size: 64px;
     font-weight: 400;
@@ -85,25 +82,21 @@ header h1 {
 
 .grid {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    width: 100%;
-    gap: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
 .grid-item {
-    flex: 1 1 calc(16.66% - 10px);
-    /* 6 items per row */
+    flex: 1 1 calc(33.33% - 20px);
+    /* Tres elementos por fila */
     box-sizing: border-box;
-    margin: 5px;
     text-align: center;
+    padding: 20px;
     background-color: #111;
     border-radius: 10px;
-    padding: 30px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(228, 255, 78, 0.3);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -113,24 +106,37 @@ header h1 {
 }
 
 .grid-item img {
-    max-width: 150px;
+    max-width: 100%;
     height: auto;
+    margin-bottom: 15px;
     border-radius: 8px;
-    margin-bottom: 20px;
 }
 
 .grid-item h3 {
-    font-size: 1em;
-    margin: 10px 0 5px;
+    font-size: 1.5em;
+    margin-bottom: 10px;
     color: #fff;
 }
 
 .grid-item p {
-    font-size: 0.9em;
-    margin: 0;
-    color: #f2f2f2;
+    font-size: 1em;
+    color: #ddd;
 }
 
+/* Estilo responsivo */
+@media screen and (max-width: 768px) {
+    .grid-item {
+        flex: 1 1 calc(50% - 20px);
+        /* Dos elementos por fila */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-item {
+        flex: 1 1 100%;
+        /* Un elemento por fila */
+    }
+}
 
 .cta-section {
     background-color: #f2f2f2;
