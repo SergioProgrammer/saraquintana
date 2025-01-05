@@ -6,32 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaraQuintana</title>
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
-    <div id="cookieConsent">
-        <p>Este sitio web NO utiliza cookies puesto que no almacena información del usuario. <button
-                id="acceptCookies">Aceptar</button></p>
-    </div>
-
-    <script>
-        document.getElementById("acceptCookies").onclick = function () {
-            setCookie("cookieConsent", "accepted", 365);
-            document.getElementById("cookieConsent").style.display = "none";
-        }
-        // Mostrar u ocultar el mensaje de cookies basado en el consentimiento
-        window.onload = function () {
-            var cookieConsent = getCookie("cookieConsent");
-            if (!cookieConsent) {
-                document.getElementById("cookieConsent").style.display = "block";
-            } else {
-                document.getElementById("cookieConsent").style.display = "none";
-            }
-
-            // Añadir evento al botón de aceptar
-            document.getElementById("acceptCookies").onclick = function () {
-                setCookie("cookieConsent", "accepted", 365);
-                document.getElementById("cookieConsent").style.display = "none";
-            }
-        }
-    </script>
 
     <!-- Fuente Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
@@ -98,12 +72,55 @@
         <p>info@saraquintana.es</p>
         <p>(+34) 677 036 164</p>
     </div>
-
+    <div id="cookieConsent">
+        <p>Este sitio web NO utiliza cookies puesto que no almacena información del usuario. <button
+                id="acceptCookies">Aceptar</button></p>
+    </div>
     <footer>
         <p>&copy; 2024 SQ Maquetación Editorial y Diseño Gráfico. Todos los derechos reservados.</p>
         <p><a href="politicayderechos.html">Política de privacidad</a> | <a href="politicayderechos.html">Términos de
                 uso</a></p>
     </footer>
+    <script>
+        // Crear una cookie
+        function setCookie(name, value, days) {
+            var expires = "";
+            if (days) {
+                var date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (value || "") + expires + "; path=/";
+        }
+
+        // Leer una cookie
+        function getCookie(name) {
+            var nameEQ = name + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+                if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+            }
+            return null;
+        }
+
+        // Mostrar u ocultar el mensaje de cookies basado en el consentimiento
+        window.onload = function () {
+            var cookieConsent = getCookie("cookieConsent");
+            if (!cookieConsent) {
+                document.getElementById("cookieConsent").style.display = "block";
+            } else {
+                document.getElementById("cookieConsent").style.display = "none";
+            }
+
+            // Añadir evento al botón de aceptar
+            document.getElementById("acceptCookies").onclick = function () {
+                setCookie("cookieConsent", "accepted", 365);
+                document.getElementById("cookieConsent").style.display = "none";
+            }
+        }
+    </script>
 
 </body>
 
