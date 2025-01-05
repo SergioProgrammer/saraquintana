@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SaraQuintana</title>
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <div id="cookieConsent">
+        <p>Este sitio web utiliza cookies para mejorar la experiencia del usuario. <button
+                id="acceptCookies">Aceptar</button></p>
+    </div>
+
+    <script>
+        document.getElementById("acceptCookies").onclick = function () {
+            setCookie("cookieConsent", "accepted", 365);
+            document.getElementById("cookieConsent").style.display = "none";
+        }
+    </script>
 
     <!-- Fuente Poppins -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
