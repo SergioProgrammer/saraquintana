@@ -169,6 +169,65 @@ header h1 {
     color: #ddd;
 }
 
+/* Long Grid Item */
+.long-grid-item {
+    flex: 1 1 100%;
+    /* Ocupa todo el ancho disponible */
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px 0;
+    /* Espacio superior e inferior */
+}
+
+.long-grid-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+}
+
+.long-grid-item h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.long-grid-item p {
+    font-size: 1.2em;
+    color: #ddd;
+}
+
+/* Button Container */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 40px;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid #f7ff44;
+    border-radius: 25px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #f7ff44;
+    color: #000;
+    border: 2px solid #000;
+}
+
+
 /* Estilo responsivo */
 @media screen and (max-width: 768px) {
 
@@ -199,7 +258,7 @@ header h1 {
 
 .cta-button {
     padding: 15px 30px;
-    background-color: #000000;
+    background-color: #0b0b0b;
     color: #f2f2f2;
     border: none;
     border-radius: 5px;
@@ -238,4 +297,10 @@ footer a:hover {
 .image-container img {
     max-width: 100%;
     height: auto;
+}
+
+.no-cookies {
+    text-align: center;
+    margin: 0;
+    /* Asegúrate de que no haya márgenes que afecten el centrado */
 }
