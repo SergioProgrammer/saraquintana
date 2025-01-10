@@ -1,31 +1,9 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body,
-html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
-    background: black;
+    background: rgb(0, 0, 0);
     color: #fff;
     line-height: 1.6;
     overflow-x: hidden;
-}
-
-header h1 {
-    font-family: 'More Sugar', cursive;
-    font-size: 60px;
-    font-weight: 700;
-    color: #fff;
 }
 
 /* Banner */
@@ -37,16 +15,10 @@ header h1 {
     justify-content: center;
     overflow: hidden;
     position: relative;
-    background-image: url('images/banner3.png');
+    background-image: url('images/banner.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-
-.banner-content {
-    color: white;
-    font-size: 2em;
-    text-align: center;
 }
 
 .banner-img {
@@ -54,22 +26,15 @@ header h1 {
     height: 100%;
     object-fit: contain;
     margin: 0;
-    /* Asegura que no haya margen en la imagen */
     padding: 0;
-    /* Asegura que no haya relleno en la imagen */
-}
+    min-height: 300px;
 
-.banner h2 {
-    font-size: 64px;
-    font-weight: 400;
-    color: #f7ff44;
-    text-shadow: 0 4px 6px rgba(252, 255, 83, 0.5);
 }
 
 /* Section Titles */
 .section-title {
     text-align: center;
-    margin: 20px 0;
+    margin: 50px 0;
     font-size: 40px;
     font-family: 'Poppins', sans-serif;
     color: #fff;
