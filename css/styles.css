@@ -277,7 +277,6 @@ header h1 {
 
 .contact h2 {
     color: #ffffff;
-    /* Azul Marino */
     margin-bottom: 20px;
     font-size: 2em;
 }
@@ -293,7 +292,6 @@ header h1 {
 .contact label {
     text-align: left;
     color: #ffffff;
-    /* Azul Marino */
 }
 
 .contact input,
@@ -304,9 +302,8 @@ header h1 {
 }
 
 .contact button {
-    background-color: #aac521;
-    /* Azul Marino */
-    color: #FFFFFF;
+    background-color: #f7ff44;
+    color: #000000;
     padding: 10px 0;
     border: none;
     border-radius: 5px;
@@ -315,7 +312,7 @@ header h1 {
 }
 
 .contact button:hover {
-    background-color: #7e9b00;
+    background-color: #aeb700;
 }
 
 footer {
