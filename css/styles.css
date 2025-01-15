@@ -94,7 +94,7 @@ header h1 {
     text-align: center;
     padding: 20px;
     background-color: #111;
-    border-radius: 10px;
+    border-radius: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -174,13 +174,15 @@ header h1 {
     /* Ocupa todo el ancho disponible */
     box-sizing: border-box;
     text-align: center;
+    border: 2px solid #f7ff44;
+    border-radius: 25px;
     padding: 20px;
     background-color: #111;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 20px 0;
-    /* Espacio superior e inferior */
+    margin: 10px 100px;
+
 }
 
 .long-grid-item:hover {
@@ -240,8 +242,9 @@ header h1 {
     background-color: #f2f2f2;
     color: #000000;
     text-align: center;
-    padding: 60px 20px;
-    margin-top: 60px;
+    padding: 10px 10px;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 .cta-section h2 {
@@ -251,7 +254,7 @@ header h1 {
 
 .cta-section p {
     font-size: 18px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 /* Button Container */
@@ -381,5 +384,4 @@ footer a:hover {
 .no-cookies {
     text-align: center;
     margin: 0;
-    /* Asegúrate de que no haya márgenes que afecten el centrado */
 }
