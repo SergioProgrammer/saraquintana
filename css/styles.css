@@ -178,10 +178,12 @@ header h1 {
     justify-content: center;
     gap: 10px;
     /* Espacio entre el texto y el botón */
+    flex-direction: row;
+    /* Alineación horizontal por defecto */
 }
 
 .btn-text {
-    font-size: 60px;
+    font-size: 20px;
     /* Ajusta el tamaño de la fuente según sea necesario */
     color: #ffffff;
     /* Ajusta el color del texto según sea necesario */
@@ -210,6 +212,9 @@ header h1 {
     .btn-container {
         flex-direction: column;
         /* Cambia la alineación a vertical en pantallas pequeñas */
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 1%;
     }
 
     .btn-text {
@@ -217,6 +222,11 @@ header h1 {
         /* Ajusta el tamaño de la fuente para pantallas pequeñas */
         margin-bottom: 10px;
         /* Añade espacio entre el texto y el botón */
+    }
+
+    .text-box {
+        margin: 10px 20px;
+        /* Ajusta el margen para pantallas pequeñas */
     }
 }
 
@@ -251,44 +261,31 @@ header h1 {
     margin-bottom: 10px;
 }
 
-/* Button Container */
-.btn-container {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    /* Espacio entre el texto y el botón */
-}
-
-.btn-text {
-    font-size: 20px;
-    /* Ajusta el tamaño de la fuente según sea necesario */
-    color: #ffffff;
-    /* Ajusta el color del texto según sea necesario */
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Button Styles */
-.btn {
-    display: inline-block;
-    padding: 10px 30px;
-    font-size: 40px;
-    color: #fff;
-    background-color: #000;
-    border: 2px solid #f7ff44;
+/* Text Box */
+.text-box {
+    border: 2px solid #000000;
+    /* Color del borde */
     border-radius: 25px;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin-top: 20px;
+    /* Bordes redondeados */
+    padding: 20px;
+    /* Relleno interno */
+    background-color: #000000;
+    /* Color de fondo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Transiciones */
+    margin: 10px 00px;
+    /* Margen por los lados */
+    text-align: center;
+    /* Centrar el texto */
 }
 
-.btn:hover {
-    background-color: #f7ff44;
-    color: #000;
-    border: 2px solid #000;
+.text-box:hover {
+    transform: translateY(-10px);
+    /* Efecto de desplazamiento al pasar el ratón */
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.3);
+    /* Sombra al pasar el ratón */
 }
 
 .contact {
@@ -351,7 +348,7 @@ header h1 {
     color: #fff;
     background-color: #000;
     border: 2px solid #f7ff44;
-    border-radius: 25px;
+    border-radius: 20px;
     text-transform: uppercase;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -425,6 +422,7 @@ footer a:hover {
         /* Cambia la alineación a vertical en pantallas pequeñas */
         margin-left: 20px;
         margin-right: 20px;
+        border-radius: 1%;
     }
 
     .btn-text {
