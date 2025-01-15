@@ -226,7 +226,6 @@ header h1 {
     border: 2px solid #000;
 }
 
-
 /* Estilo responsivo */
 @media screen and (max-width: 768px) {
 
@@ -371,6 +370,12 @@ footer a:hover {
 .image-container img {
     max-width: 100%;
     height: auto;
+}
+
+.cookie-consent {
+    background-color: #f2f2f2;
+    color: #000;
+    text-align: center;
 }
 
 .no-cookies {
