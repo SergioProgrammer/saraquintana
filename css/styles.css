@@ -65,7 +65,7 @@ header h1 {
 .section-title {
     text-align: center;
     margin: 20px 0;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Poppins', sans-serif;
     color: #fff;
 }
@@ -191,13 +191,13 @@ header h1 {
 }
 
 .long-grid-item h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin-bottom: 10px;
     color: #fff;
 }
 
 .long-grid-item p {
-    font-size: 1.2em;
+    font-size: 1.4em;
     color: #ddd;
 }
 
@@ -205,13 +205,26 @@ header h1 {
 .btn-container {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espacio entre el texto y el botón */
+}
+
+.btn-text {
+    font-size: 60px;
+    /* Ajusta el tamaño de la fuente según sea necesario */
+    color: #ffffff;
+    /* Ajusta el color del texto según sea necesario */
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Button Styles */
 .btn {
     display: inline-block;
     padding: 10px 30px;
-    font-size: 40px;
+    font-size: 20px;
     color: #fff;
     background-color: #000;
     border: 2px solid #f7ff44;
@@ -261,6 +274,19 @@ header h1 {
 .btn-container {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espacio entre el texto y el botón */
+}
+
+.btn-text {
+    font-size: 20px;
+    /* Ajusta el tamaño de la fuente según sea necesario */
+    color: #ffffff;
+    /* Ajusta el color del texto según sea necesario */
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Button Styles */
@@ -321,13 +347,26 @@ header h1 {
 .btn-container {
     text-align: center;
     margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    /* Espacio entre el texto y el botón */
+}
+
+.btn-text {
+    font-size: 50px;
+    /* Ajusta el tamaño de la fuente según sea necesario */
+    color: #ffffff;
+    /* Ajusta el color del texto según sea necesario */
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Button Styles */
 .btn {
     display: inline-block;
     padding: 5px 30px;
-    font-size: 30px;
+    font-size: 50px;
     color: #fff;
     background-color: #000;
     border: 2px solid #f7ff44;
@@ -384,4 +423,29 @@ footer a:hover {
 .no-cookies {
     text-align: center;
     margin: 0;
+}
+
+/* Highlighted text */
+.highlight {
+    background-color: #f7ff44;
+    /* Cambia el color de fondo según sea necesario */
+    color: #000;
+    /* Cambia el color del texto según sea necesario */
+    padding: 0 5px;
+    /* Añade un poco de relleno para que el fondo se vea mejor */
+    border-radius: 3px;
+    /* Añade bordes redondeados si lo deseas */
+}
+
+/* Estilo responsivo */
+@media screen and (max-width: 768px) {
+    .btn-container {
+        flex-direction: column;
+        /* Cambia la alineación a vertical en pantallas pequeñas */
+    }
+
+    .btn-text {
+        margin-bottom: 10px;
+        /* Añade espacio entre el texto y el botón */
+    }
 }
