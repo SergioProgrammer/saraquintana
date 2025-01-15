@@ -311,6 +311,22 @@ header h1 {
     border-radius: 2px;
 }
 
+.contact button {
+    padding: 10px 20px;
+    border: 2px solid #f7ff44;
+    /* Asegura que el borde sea visible */
+    border-radius: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 26px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: auto;
+    /* Asegura que el ancho se ajuste al contenido */
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
+}
+
 /* Button Container */
 .btn-container {
     text-align: center;
