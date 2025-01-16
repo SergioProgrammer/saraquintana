@@ -20,16 +20,6 @@ body {
     overflow-x: hidden;
 }
 
-.seo-box {
-    justify-content: center;
-    flex: 1 1 calc(33.33% - 20px);
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 900px;
-    margin: 0 auto;
-
-}
-
 .seo {
     text-align: center;
     color: #f7ff44;
